@@ -1,0 +1,327 @@
+<!-- <<!DOCTYPE html>*/ -->
+<html>
+  <head>
+    <title>DiV - Developers In Vogue</title>
+    <style type="text/css">
+      .navbar{
+        overflow:hidden;
+        background-color:#7cfc00;
+      }
+
+      .navbar a{
+        float: left;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        padding: 12px 14px;
+        text-decoration: none;
+      }
+
+      .dropdown .dropbtn{
+        border: none;
+        outline: none;
+        color: black;
+        min-width: 200px;
+        padding: 14px 18px;
+        background-color: inherit;
+        font-family: cursive;
+        margin: 0;
+      }
+      .navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ff69b4;
+}
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 140px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: right;
+      }
+
+      .dropdown-content a:hover {
+        background-color:  #ff69b4;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color:  #ff69b4;
+      }
+
+      .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color:#E0FFFF;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 2;
+      }
+
+      .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      display: flow-root;
+      text-align: left;
+      }
+
+      .dropdown-content a:hover {
+      background-color: #add8e6;
+      }
+
+      .dropdown:hover .dropdown-content {
+      display: inline-block;
+      align: right;
+      }
+
+      .container {
+        width:100%;
+        height:50%;
+        object-fit:fill;
+        align:center;
+}
+
+    .image {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: 90%;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%)
+    }
+
+    .container:hover .image {
+      opacity: 0.3;
+    }
+
+    .container:hover .middle {
+      opacity: 1;
+    }
+
+    .text {
+      color: black;
+      font-size: 60px;
+      font-weight: 600;
+      font-family: cursive;
+      padding: 12px 14px;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      padding: 10px;
+  /* height: 400px; */
+    align-content: space-around;
+    grid-gap: 10px;
+    }
+  .grid-item {
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      font-size: 25px;
+      text-align: center;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./welcome.jpg" class="image" alt="Avatar"
+      style = " align-content: center; float: none;">
+      <div class="middle">
+        <div class="text" style = "align-content: center; float: none;">Developers In Vogue</div>
+      </div>
+    </div>
+
+<br>
+    <div>
+      <p id="demo">
+        <h4 style = "color:black; font-family: cursive; font-size: 80px; text-align: center; margin-top:-20;">
+          CODERS HUB</h4>
+      </p>
+    </div>
+
+    <div class="navbar">
+      <a href="#home" style = "color:black;
+      font-family: cursive;
+      font-size: 22px;
+      padding: 14px 16px;
+      min-width: 200px;">
+        Home </a>
+      <a href="#About" style = "color:black;
+      font-family: cursive;
+      padding: 14px 16px;
+      font-size: 22px;
+      min-width: 200px;">
+        About </a>
+        <div class="dropdown">
+          <button class = "dropbtn" style = "color:black;
+          font-family: cursive;
+          font-size: 22px; width:50;"
+          >
+            Contact Us!
+            <!-- <i class = "fa fa-caret-down"></i> -->
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Email</a>
+            <a href="#">Phone</a>
+            <a href="#">WhatsApp</a>
+          </div>
+        </div>
+    </div>
+
+    <form class="" action="myFirstWebpage.html" method="post">
+      <div class="forms"
+      style = "margin: 80px; padding: 80px; border: 2px solid #9ACD32; border-radius:25px; box-sizing: border-box; align:center;">
+        <div style = "color:black;
+          font-family: cursive;
+          font-size: 50px;
+          text-align: center;
+          font-weight:bold;">
+            CONTACT FORM
+        </div>
+      <br>
+      <br>
+
+      <div style = "color:black; font-family: cursive; font-size: 25px; text-align: left; margin:5px">
+          First name*:
+        <br>
+        <input type="text" name="FirstName"
+        style = "width: 400px; height: 40px; font-family: cursive; font-size: 25px; margin:5px; background-color:#E0FFFF;">
+        <br>
+        <br>
+      </div>
+
+      <div style = "color:black; font-family: cursive; font-size: 25px; text-align: left; margin:5px">
+          Last name*:
+        <br>
+        <input type="text" name="LastName"
+        style = "width: 400px; height: 40px; font-family: cursive; font-size: 25px; margin:5px; background-color:#E0FFFF; ">
+        <br>
+        <br>
+      </div>
+
+      <div style = "color:black; font-family: cursive; font-size: 25px; text-align: left;">
+          Email*:
+        <br>
+        <input type="email" name="Email"
+        style = "width: 400px; height: 40px; font-family: cursive; font-size: 25px; margin:5px; background-color:#E0FFFF; ">
+        <br>
+        <br>
+      </div>
+
+        <div style = "color:black; font-family: cursive; font-size: 25px; text-align: left; margin:5px;">
+          Gender*:
+          <br>
+          <label>
+              <input type="radio" name="gender" id="male"
+              style = "color:black; font-family: cursive; font-size: 25px; text-align: left;">
+              Male
+              <br>
+              <input type="radio" name="gender" id="female"
+              style = "color:black; font-family: cursive; font-size: 25px; text-align: left;">
+              Female
+          </label>
+        </div>
+          <br>
+
+          <div style = "color:black; font-family: cursive; font-size: 25px; text-align: left;">
+              Date Of Birth*:
+            <br>
+            <input type="date" name="DOB"
+            style = "width: 200px; height: 40px; font-family: cursive; font-size: 25px; margin:5px; background-color:#E0FFFF; ">
+            <br>
+            <br>
+          </div>
+
+          <div style = "color:black; font-family: cursive; font-size: 25px; text-align: left;">
+              Contact Number*:
+            <br>
+            <input type="text" name="ContactNumber"
+            style = "width: 200px; height: 40px; font-family: cursive; font-size: 25px; margin:5px; background-color:#E0FFFF; ">
+            <br>
+            <br>
+          </div>
+
+          <div style = "color:black; font-family: cursive; font-size: 25px; text-align: left;">
+              Password*:
+            <br>
+            <input type="password" name="Password"
+            style = "width: 300px; height: 40px; font-family: cursive; font-size: 25px; margin:5px; background-color:#E0FFFF; ">
+            <br>Re-Enter Password*:
+            <br>
+            <input type="password" name="Password"
+            style = "width: 300px; height: 40px; font-family: cursive; font-size: 25px; margin:5px; background-color:#E0FFFF; ">
+            <br>
+            <br>
+          </div>
+
+          <div style = "color:black; font-family: cursive; font-size: 25px; text-align: center;">
+            <br>
+            <input type="submit" name="SubmitForm" onclick="submission()"
+            style = "width: 200px;align-content: center; float: inherit ; height: 70px; font-family: cursive; font-size: 25px; margin:5px; background-color:	#FF6347;">
+            <br>
+            <br>
+          </div>
+
+          <br>
+        </div>
+      </div>
+    </form>
+
+    <div class="grid-container" style = "color:black; font-family: cursive;">
+
+      <div class="grid-item"
+      style = "background-color:	#B22222;"> “The Way Get Started Is To Quit Talking And Begin Doing.” – Walt Disney</div>
+      <div class="grid-item"
+      style = "background-color:	#00FF00;"> “The Way Get Started Is To Quit Talking And Begin Doing.” – Walt Disney</div>
+      <div class="grid-item"
+      style = "background-color:	#EEE8AA;"> “Don’t Let Yesterday Take Up Too Much Of Today.” – Will Rogers</div>
+      <div class="grid-item"
+      style = "background-color:	#98FB98;"> “You Learn More From Failure Than From Success. Don’t Let It Stop You. Failure Builds Character.” – Unknown</div>
+      <div class="grid-item"
+      style = "background-color:	#FFDAB9;"> “It’s Not Whether You Get Knocked Down, It’s Whether You Get Up.” – Inspirational Quote By Vince Lombardi</div>
+      <div class="grid-item"
+      style = "background-color:	#BC8F8F;"> “If You Are Working On Something That You Really Care About, You Don’t Have To Be Pushed. The Vision Pulls You.” – Steve Jobs</div>
+      <div class="grid-item"
+      style = "background-color:	#FA8072;"> “People Who Are Crazy Enough To Think They Can Change The World, Are The Ones Who Do.” – Rob Siltanen</div>
+      <div class="grid-item"
+      style = "background-color:	#6A5ACD;"> “Failure Will Never Overtake Me If My Determination To Succeed Is Strong Enough.” – Og Mandino</div>
+      <div class="grid-item"
+      style = "background-color:#00FF7F;"> “Entrepreneurs Are Great At Dealing With Uncertainty And Also Very Good At Minimizing Risk. That’s The Classic Entrepreneur.” – Mohnish Pabrai</div>
+      <div class="grid-item"
+      style = "background-color:	#FFD700;"> “We May Encounter Many Defeats But We Must Not Be Defeated.” – Maya Angelou</div>
+      <div class="grid-item"
+      style = "background-color:#40E0D0;"> “Knowing Is Not Enough; We Must Apply. Wishing Is Not Enough; We Must Do.” – Johann Wolfgang Von Goethe</div>
+      <div class="grid-item"
+      style = "background-color:	#708090 ;"> “Imagine Your Life Is Perfect In Every Respect; What Would It Look Like?” – Brian Tracy</div>
+    </div>
+
+    <script>
+      const submission = () => {
+        alert ("Form Submitted!!");
+      };
+    </script>
+
+  </body>
+</html>

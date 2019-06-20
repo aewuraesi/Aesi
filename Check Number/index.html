@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html"
+    >
+  <head>
+    <title>Change Number</title>
+
+    <link rel="stylesheet" href="./cssfile.css">
+  </head>
+  <body>
+      <div class="holder">
+        <button style="position: relative; margin: 10%;" id="resultz">RE-ENTER NUMBER</button>
+        <hr>
+        <div style="font-size:xx-large; font-family: cursive; text-align:center;">
+          <label for="outputRes" id="resultz">Result:</label>
+          <h1 name="outputRes" id="outputRes"> OUTPUT </h1>
+        </div>
+      </div>
+        <script>
+          var numb = prompt("Please Enter A Number");
+
+          const checker = () => {
+            if (numb <= 0){
+              document.getElementById('outputRes').innerHTML = "The number is less than 1!"
+            }
+            else if (numb <=10 ){
+            document.getElementById('outputRes').innerHTML = "You entered a number between 1 and 10";
+            }
+            else if (numb <=20){
+              document.getElementById('outputRes').innerHTML = "You entered a number between 11 and 20";
+            }
+            else if (numb <=30 ){
+              document.getElementById('outputRes').innerHTML = "You entered a number between 21 and 30";
+            }
+            else if (numb <=40){
+              document.getElementById('outputRes').innerHTML = "You entered a number between 31 and 40";
+            }
+            else if (numb <=50 ){
+              document.getElementById('outputRes').innerHTML = "You entered a number between 41 and 50";
+            }
+            else if (numb <=60){
+              document.getElementById('outputRes').innerHTML = "You entered a number between 51 and 60";
+            }
+            else if (numb <=70){
+            document.getElementById('outputRes').innerHTML = "You entered a number between 61 and 70";
+            }
+            else if (numb <=80){
+              document.getElementById('outputRes').innerHTML = "You entered a number between 71 and 80";
+            }
+            else if (numb <=90){
+              document.getElementById('outputRes').innerHTML = "You entered a number between 81 and 90";
+            }
+            else if (numb < 100){
+            document.getElementById('outputRes').innerHTML = "You entered a number between 91 and 99";
+            }
+            else{
+              document.getElementById('outputRes').innerHTML = "Please enter a valid number between 0 and 100";
+            }
+          }
+
+      checker();
+
+      let button = document.querySelector("#resultz");
+
+      button.addEventListener("click", event => {
+          numb = prompt("Please Enter A Number");
+          checker();
+      });
+
+        </script>
+  </body>
+</html>

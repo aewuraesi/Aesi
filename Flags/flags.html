@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flags</title>
+    <link rel="stylesheet" href="./flaging.css">
+  </head>
+  <body>
+    <div class="headings">
+      FLAGS!!
+    </div>
+    <h2>Hover mouse over image to show the country's name and its capital</h2>
+    <div class="row" style="flex:row;" id="entBody">
+      <div class="column">
+        <img src="./ghana.png" onmouseover= "ghana()"  id="flag1">
+      </div>
+
+      <div class="column">
+        <img id="flag2" src="./canada.png">
+      </div>
+
+      <div class="column">
+        <img id="flag3" src="./italy.png">
+      </div>
+    </div>
+
+  <textarea id="flaging" style=" margin:0; padding:1%;" rows="2" cols="17"> - </textarea>
+
+
+    <script type="text/javascript" async>
+      let flag1 = document.querySelector("#flag1");
+      let flag2 = document.querySelector("#flag2");
+      let flag3 = document.querySelector("#flag3");
+      let entBody = document.querySelector('#entBody');
+      let country = " Country: ";
+      let capital = " Capital: ";
+
+      function ghana(){
+        document.getElementById("flaging").innerHTML = country + "Ghana &#13;&#10;" + capital + "Accra";
+      }
+
+      function canada(){
+        document.getElementById("flaging").innerHTML = country + "Canada &#13;&#10;" + capital + "Ottawa";
+
+      }
+
+      function italy(){
+        document.getElementById("flaging").innerHTML = country + "Italy &#13;&#10;" + capital + "Rome";
+      }
+
+      function clearing(){
+        document.getElementById("flaging").innerHTML = "-";
+      }
+
+      document.getElementById("flag1").onmouseover = function() {ghana()};
+      document.getElementById("flag2").onmouseover = function() {canada()};
+      document.getElementById("flag3").onmouseover = function() {italy()};
+      document.getElementById("entBody").onmouseout = function() {clearing()};
+    </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Translator</title>
+    <link rel="stylesheet" href="./cssfile.css">
+    <!-- <script src="jquery.js"/> -->
+    <!-- <script src="jquery.translate.js"/> -->
+
+  </head>
+  <body>
+    <section>
+      <div>
+        <h2 id="translation">Hello World!</h2>
+      </div>
+      <div class = "langButtz">
+        <button id="french" type="button" name="french">FRENCH</button>
+        <hr>
+        <button type="button" name="hausa" id="hausa">HAUSA</button>
+        <hr>
+        <button type="button" name="finnish" id="finnish">FINNISH</button>
+        <hr>
+        <button type="button" name="arabic" id="arabic">ARABIC</button>
+        <hr>
+        <button type="button" name="italian" id="italian">ITALIAN</button>
+        <hr>
+        <button type="button" name="english" id="english">DEFAULT(En)</button>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+
+        var dict = {
+            fr:"Bonjour le monde!",
+            ha:"Sannu Duniya!",
+            fi: "Hei maailma!",
+            ar:"مرحبا بالعالم!",
+            it: "Ciao mondo!",
+            en: "Hello World!"
+          }
+          let button1 = document.querySelector("#french");
+          let button2 = document.querySelector("#hausa");
+          let button3 = document.querySelector("#finnish");
+          let button4 = document.querySelector("#arabic");
+          let button5 = document.querySelector("#italian");
+          let button6 = document.querySelector("#english");
+
+        button1.addEventListener("click", event => {
+            document.getElementById("translation").innerHTML = dict.fr;
+          });
+
+        button2.addEventListener("click", event => {
+              document.getElementById("translation").innerHTML = dict.ha;
+            });
+
+        button3.addEventListener("click", event => {
+          document.getElementById("translation").innerHTML = dict.fi;
+        });
+
+        button4.addEventListener("click", event => {
+          document.getElementById("translation").innerHTML = dict.ar;
+        });
+
+        button5.addEventListener("click", event => {
+            document.getElementById("translation").innerHTML = dict.it;
+          });
+
+        button6.addEventListener("click", event => {
+            document.getElementById("translation").innerHTML = dict.en;
+          });
+    </script>
+  </body>
+</html>

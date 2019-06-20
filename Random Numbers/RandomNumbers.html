@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Random Numbers</title>
+    <link rel="stylesheet" href="./random.css">
+  </head>
+  <body>
+    <div class="headings">
+      RANDOM NUMBERS
+    </div>
+    <h2>Click on the button below to generate a random Number</h2>
+    <button type="button" name="button" id="button">GENERATE</button>
+    <h2 id="generation" style="font-size:100px;">-</h2>
+<script type="text/javascript">
+  let button = document.querySelector("#button");
+
+  button.addEventListener("click", event => {
+  const randNum = () => {
+    var random1 = Math.floor(Math.random()*1000);
+    var random2 = Math.floor(Math.random()*1000);
+    var random3 = Math.floor(Math.random()*1000);
+    var random4 = Math.floor(Math.random()*1000);
+    var random5 = Math.floor(Math.random()*1000);
+    document.getElementById("generation").innerHTML = random1 + ", " + random2 + ", " + random3 + ", " + random4 + ", " + random5;
+  }
+  randNum();
+});
+
+
+</script>
+  </body>
+</html>

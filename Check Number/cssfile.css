@@ -1,0 +1,72 @@
+body{
+  display: block;
+  margin: 2%;
+  padding: 10%;
+  background-color: azure;
+  width:80%;
+  height:auto;
+}
+
+input{
+  width: 1500px;
+  height: 250px;
+  background-color: powderblue;
+  font-size: 100px;
+  font-family: cursive;
+  text-align: center;
+  padding: 8%;
+  margin: 5%;
+}
+
+output{
+  width: 1500px;
+    height: 70px;
+    font-family: cursive;
+    text-align: center;
+    padding: 2%;
+    margin: 2%;
+    display: inline-block;
+    font-size: 40px;
+}
+button{
+  width: 2000px;
+height: 300px;
+font-family: cursive;
+font-size: 120px;
+text-align: center;
+padding: 2%;
+display: inline-block;
+position: relative;
+margin: 5%;
+}
+
+h1 {
+  text-align: center;
+  font-family: cursive;
+  margin: 2%;
+  padding: 1%;
+  font-size: 120px;
+  font-weight: bold;
+}
+
+.holder{
+    display: block;
+    justify-items: center;
+
+}
+
+#instruction{
+  font-size: 120px;
+  text-align: center;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+#resultz{
+  font-size: 120px;
+  text-align: center;
+  font-family: cursive;
+  font-weight: bold;
+  margin: 2%;
+  padding: 1%;
+}
